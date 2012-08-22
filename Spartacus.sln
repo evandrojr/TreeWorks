@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spartacus", "Spartacus.csproj", "{257E66A1-ED87-43AB-BE1E-766FEE78015F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Spartacus_Installer", "Spartacus_Installer\Spartacus_Installer.vdproj", "{EEE0291C-8A5A-4A4C-8B25-F924DA9DD2D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{257E66A1-ED87-43AB-BE1E-766FEE78015F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257E66A1-ED87-43AB-BE1E-766FEE78015F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257E66A1-ED87-43AB-BE1E-766FEE78015F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257E66A1-ED87-43AB-BE1E-766FEE78015F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE0291C-8A5A-4A4C-8B25-F924DA9DD2D7}.Debug|Any CPU.ActiveCfg = Debug
+		{EEE0291C-8A5A-4A4C-8B25-F924DA9DD2D7}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,395 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{257E66A1-ED87-43AB-BE1E-766FEE78015F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Spartacus</RootNamespace>
+    <AssemblyName>Spartacus</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>sword16x16.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Experiment.cs" />
+    <Compile Include="FE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FE.Designer.cs">
+      <DependentUpon>FE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClsValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClsValidation.Designer.cs">
+      <DependentUpon>FrmClsValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsole.Designer.cs">
+      <DependentUpon>FrmConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraph.Designer.cs">
+      <DependentUpon>FrmGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrid.Designer.cs">
+      <DependentUpon>FrmGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPredict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPredict.Designer.cs">
+      <DependentUpon>FrmPredict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPredictorMv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPredictorMv.Designer.cs">
+      <DependentUpon>FrmPredictorMv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVltValidation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVltValidation.Designer.cs">
+      <DependentUpon>FrmVltValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardImportDataChooseDimensionality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardImportDataChooseDimensionality.Designer.cs">
+      <DependentUpon>FrmWizardImportDataChooseDimensionality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hybrid.cs" />
+    <Compile Include="MaxDif.cs" />
+    <Compile Include="FrmWizardChooseRegressionAlgorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardChooseRegressionAlgorithm.Designer.cs">
+      <DependentUpon>FrmWizardChooseRegressionAlgorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gini.cs" />
+    <Compile Include="ValueGroup.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DataImport.cs" />
+    <Compile Include="Def.cs" />
+    <Compile Include="Fcn.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategoricalSplitProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategoricalSplitProperties.Designer.cs">
+      <DependentUpon>FrmCategoricalSplitProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContinuousSplitProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContinuousSplitProperties.Designer.cs">
+      <DependentUpon>FrmContinuousSplitProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataTransport.Designer.cs">
+      <DependentUpon>FrmDataTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessage.Designer.cs">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNodeDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNodeDesign.Designer.cs">
+      <DependentUpon>FrmNodeDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPredictor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPredictor.Designer.cs">
+      <DependentUpon>FrmPredictor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOption.Designer.cs">
+      <DependentUpon>FrmOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReferenceTableData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReferenceTableData.Designer.cs">
+      <DependentUpon>FrmReferenceTableData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTextBox.Designer.cs">
+      <DependentUpon>FrmTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardChooseClassificationAlgorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardChooseClassificationAlgorithm.Designer.cs">
+      <DependentUpon>FrmWizardChooseClassificationAlgorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardDefineVariables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardDefineVariables.Designer.cs">
+      <DependentUpon>FrmWizardDefineVariables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardDataset.Designer.cs">
+      <DependentUpon>FrmWizardDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardImportDataDefineSchema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardImportDataDefineSchema.Designer.cs">
+      <DependentUpon>FrmWizardImportDataDefineSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardImportDataLoadDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardImportDataLoadDatabase.Designer.cs">
+      <DependentUpon>FrmWizardImportDataLoadDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardImportDataSelectFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardImportDataSelectFile.Designer.cs">
+      <DependentUpon>FrmWizardImportDataSelectFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWizardNewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWizardNewProject.Designer.cs">
+      <DependentUpon>FrmWizardNewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MvTb.cs" />
+    <Compile Include="PredictorMv.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Struct.cs" />
+    <Compile Include="Node.cs">
+    </Compile>
+    <Compile Include="FrmNodeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNodeData.Designer.cs">
+      <DependentUpon>FrmNodeData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NodeTargetCategorical.cs" />
+    <Compile Include="NodeTargetCategoricalUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NodeTargetContinuous.cs" />
+    <Compile Include="NodeTargetContinuousUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Predictor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategoricalSplitProperties.resx">
+      <DependentUpon>FrmCategoricalSplitProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClsValidation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmClsValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsole.resx">
+      <DependentUpon>FrmConsole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContinuousSplitProperties.resx">
+      <DependentUpon>FrmContinuousSplitProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataTransport.resx">
+      <DependentUpon>FrmDataTransport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FE.resx">
+      <DependentUpon>FE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGraph.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessage.resx">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNodeDesign.resx">
+      <DependentUpon>FrmNodeDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPredict.resx">
+      <DependentUpon>FrmPredict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPredictor.resx">
+      <DependentUpon>FrmPredictor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOption.resx">
+      <DependentUpon>FrmOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPredictorMv.resx">
+      <DependentUpon>FrmPredictorMv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReferenceTableData.resx">
+      <DependentUpon>FrmReferenceTableData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVltValidation.resx">
+      <DependentUpon>FrmVltValidation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTextBox.resx">
+      <DependentUpon>FrmTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardChooseClassificationAlgorithm.resx">
+      <DependentUpon>FrmWizardChooseClassificationAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardChooseRegressionAlgorithm.resx">
+      <DependentUpon>FrmWizardChooseRegressionAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardDataset.resx">
+      <DependentUpon>FrmWizardDataset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardDefineVariables.resx">
+      <DependentUpon>FrmWizardDefineVariables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardImportDataChooseDimensionality.resx">
+      <DependentUpon>FrmWizardImportDataChooseDimensionality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardImportDataDefineSchema.resx">
+      <DependentUpon>FrmWizardImportDataDefineSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardImportDataLoadDatabase.resx">
+      <DependentUpon>FrmWizardImportDataLoadDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardImportDataSelectFile.resx">
+      <DependentUpon>FrmWizardImportDataSelectFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWizardNewProject.resx">
+      <DependentUpon>FrmWizardNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNodeData.resx">
+      <DependentUpon>FrmNodeData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Prune.cs" />
+    <Compile Include="ReferenceTable.cs" />
+    <Compile Include="RNG.cs" />
+    <Compile Include="Schema.cs" />
+    <Compile Include="SplitCategoryView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Stats.cs" />
+    <Compile Include="TableCct.cs" />
+    <Compile Include="TableMap.cs" />
+    <Compile Include="TargetCategoricalClass.cs" />
+    <Compile Include="TestNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree.cs" />
+    <Compile Include="TreeClsValReport.cs" />
+    <Compile Include="TreeMvValidation.cs" />
+    <Compile Include="TreeValidation.cs" />
+    <Compile Include="Validation.cs" />
+    <Compile Include="Entropy.cs" />
+    <Compile Include="Riv.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\cross_swords.gif" />
+    <Content Include="img\grow_tree_hands.jpg" />
+    <None Include="img\lonely_tree.png" />
+    <Content Include="img\spatacus_banner.gif" />
+    <Content Include="img\tree_landscape.jpg" />
+    <Content Include="img\watering_can.gif" />
+    <None Include="Resources\logo.gif" />
+    <None Include="Resources\pic19169.png" />
+    <None Include="Resources\Information_centre.png" />
+    <Content Include="sword16x16.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

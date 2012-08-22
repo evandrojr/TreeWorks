@@ -1,0 +1,18 @@
+select * from chapterH
+ limit 100;
+
+select totalcostfinal_mff, diagp, totalcostfinal_mff*totalcostfinal_mff
+from chapterH, ref0
+where chapterH.id_spartacus = ref0.id_spartacus
+group by totalcostfinal_mff, diagp;
+
+
+select totalcostfinal_mff, diagp, totalcostfinal_mff*totalcostfinal_mff
+from chapterH
+group by totalcostfinal_mff, diagp;
+
+
+CREATE TABLE ref0 AS select id_spartacus from chapterH where id_spartacus > 5000 and id_spartacus > 20000;
+
+select * from ref0
+ limit 100;

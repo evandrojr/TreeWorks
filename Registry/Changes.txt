@@ -1,0 +1,77 @@
+Key Name:          HKEY_LOCAL_MACHINE\SOFTWARE\ODBC
+Class Name:        <NO CLASS>
+Last Write Time:   8/12/2004 - 8:52 PM
+
+Key Name:          HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI
+Class Name:        <NO CLASS>
+Last Write Time:   10/1/2004 - 5:49 PM
+
+Key Name:          HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\Novo nome CSV
+Class Name:        <NO CLASS>
+Last Write Time:   10/1/2004 - 5:49 PM
+Value 0
+  Name:            Driver
+  Type:            REG_SZ
+  Data:            C:\WINDOWS\System32\odbcjt32.dll
+
+Value 1
+  Name:            Description
+  Type:            REG_SZ
+  Data:            Nova descricao CSV
+
+Value 2
+  Name:            DriverId
+  Type:            REG_DWORD
+  Data:            0x1b
+
+Value 3
+  Name:            FIL
+  Type:            REG_SZ
+  Data:            text;
+
+Value 4
+  Name:            SafeTransactions
+  Type:            REG_DWORD
+  Data:            0x0
+
+Value 5
+  Name:            UID
+  Type:            REG_SZ
+  Data:            
+
+
+Key Name:          HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\Novo nome CSV\Engines
+Class Name:        <NO CLASS>
+Last Write Time:   10/1/2004 - 5:49 PM
+
+Key Name:          HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\Novo nome CSV\Engines\Text
+Class Name:        <NO CLASS>
+Last Write Time:   10/1/2004 - 5:49 PM
+Value 0
+  Name:            ImplicitCommitSync
+  Type:            REG_SZ
+  Data:            
+
+Value 1
+  Name:            Threads
+  Type:            REG_DWORD
+  Data:            0x3
+
+Value 2
+  Name:            UserCommitSync
+  Type:            REG_SZ
+  Data:            Yes
+
+
+Key Name:          HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources
+Class Name:        <NO CLASS>
+Last Write Time:   10/1/2004 - 5:49 PM
+Value 0
+  Name:            TrioMotors
+  Type:            REG_SZ
+  Data:            Microsoft Access Driver (*.mdb)
+
+Value 1
+  Name:            Novo nome CSV
+  Type:            REG_SZ
+  Data:            Driver da Microsoft para arquivos texto (*.txt; *.csv)

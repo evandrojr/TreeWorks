@@ -1,0 +1,2 @@
+SELECT vnr, count(vnr) FROM dataset ds where Exists (select ref0.id_spartacus from ref0, dataset where ds.id_spartacus=ref0.id_spartacus) GROUP BY vnr
+SELECT vnr, count(vnr) FROM dataset, ref0 where dataset.id_spartacus=ref0.id_spartacus GROUP BY vnr
